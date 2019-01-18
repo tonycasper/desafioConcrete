@@ -4,19 +4,19 @@ import java.util.ArrayList;
 
 public class Response<Tr> {
 	
-	private Tr responseError;
+	private Tr response;
 	private ArrayList<String> errors;
 
-	public Tr getResponseError() {
-		return responseError;
+	public Tr getResponse() {
+		return response;
 	}
-	public void setResponseError(Tr re) {
-		this.responseError = re; 
+	public void setResponse(Tr re) {
+		this.response = re; 
 	}
 	public ArrayList<String> getErrors() {
 		if (this.errors == null) {
 			this.errors = new ArrayList<String>();
-		}
+	}
 		return errors;
 	}
 	public void setResponseError(ArrayList<String> erros ) {
