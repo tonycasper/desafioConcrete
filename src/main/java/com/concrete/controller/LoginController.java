@@ -1,4 +1,4 @@
-package com.concret.controller;
+package com.concrete.controller;
 
 import javax.validation.Valid;
 
@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.concret.model.LoginTO;
-import com.concret.model.Response;
-import com.concret.model.User;
-import com.concret.service.UserService;
+import com.concrete.model.LoginTO;
+import com.concrete.model.Response;
+import com.concrete.model.User;
+import com.concrete.service.UserService;
 
 @RestController
 @RequestMapping(value = "/login")

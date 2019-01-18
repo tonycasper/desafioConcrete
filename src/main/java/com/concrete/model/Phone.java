@@ -1,4 +1,4 @@
-package com.concret.model;
+package com.concrete.model;
 
 
 public class Phone {

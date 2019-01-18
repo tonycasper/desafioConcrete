@@ -1,4 +1,4 @@
-package com.concret.controller;
+package com.concrete.controller;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.concret.exception.NotAuthorizedException;
-import com.concret.model.Response;
-import com.concret.model.User;
-import com.concret.service.UserService;
+import com.concrete.exception.NotAuthorizedException;
+import com.concrete.model.Response;
+import com.concrete.model.User;
+import com.concrete.service.UserService;
 
 @RestController
 @RequestMapping("/login")

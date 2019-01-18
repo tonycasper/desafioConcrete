@@ -1,7 +1,9 @@
-package com.concret.model;
+package com.concrete.model;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+
+import javax.persistence.OneToMany;
 
 public class User {
 	
@@ -9,14 +11,19 @@ public class User {
 	
 	private String name;
 	
+	private String email;
+	
 	private String password;
 	
 	private LocalDateTime created;
+	
+	private LocalDateTime modified;
 	
 	private LocalDateTime last_login;
 	
 	private String token;
 	
+	@OneToMany
 	private ArrayList<Phone> phone;
 	
 	private TypeProfileEnum typeProfileEnum;
@@ -88,4 +95,19 @@ public class User {
 		this.typeProfileEnum = typeProfileEnum;
 	}
 
+	public void setModified(LocalDateTime modified) {
+		this.modified = modified;	
+	}
+	
+	public LocalDateTime getModified() {
+		return modified;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
 }
