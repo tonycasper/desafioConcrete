@@ -1,13 +1,13 @@
-package com.concrete.desafio;
+package com.concret;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DesafioApplication {
+public class ConcreteApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DesafioApplication.class, args);
+		SpringApplication.run(ConcreteApplication.class, args);
 	}
 
 }
