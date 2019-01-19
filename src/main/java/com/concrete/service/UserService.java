@@ -9,7 +9,6 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.concrete.data.PhoneRepository;
 import com.concrete.data.UserRepository;
 import com.concrete.exception.DuplicateUserException;
 import com.concrete.exception.InvalidPasswordException;

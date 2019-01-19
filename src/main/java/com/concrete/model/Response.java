@@ -19,8 +19,8 @@ public class Response<Tr> {
 	}
 		return errors;
 	}
-	public void setResponseError(ArrayList<String> erros ) {
-		this.errors = errors;
+	public void setResponseError(ArrayList<String> e ) {
+		this.errors = e;
 	}
 	
 }

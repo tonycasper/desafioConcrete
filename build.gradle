@@ -35,4 +35,9 @@ dependencies {
 	compile 'org.springframework:spring-context:4.1.0.RELEASE'
 	runtime 'com.h2database:h2'
 	runtime'org.springframework.boot:spring-boot-devtools'
+	testCompile 'org.springframework.boot:spring-boot-starter-test'
+	compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.4.0-b180830.0359'
+	// https://mvnrepository.com/artifact/org.javassist/javassist
+	compile group: 'org.javassist', name: 'javassist', version: '3.24.1-GA'
+	
 }

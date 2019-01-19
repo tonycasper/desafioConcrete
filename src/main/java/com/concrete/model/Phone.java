@@ -1,7 +1,15 @@
 package com.concrete.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+@Entity
 public class Phone {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int id;
 	
 	private int number;
@@ -30,7 +38,5 @@ public class Phone {
 
 	public void setDdd(int ddd) {
 		this.ddd = ddd;
-	}
-	
-	
+	}		
 }

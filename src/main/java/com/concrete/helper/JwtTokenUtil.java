@@ -61,7 +61,7 @@ public class JwtTokenUtil {
 
 		try {
 			Claims claims = getClaimsFromToken(token);
-			expiration = claims.getExpiration();
+			expiration = (Date) claims.getExpiration();
 		} catch (Exception e) {
 			expiration = null;
 		}
@@ -85,11 +85,11 @@ public class JwtTokenUtil {
 	}
 
 	public boolean tokenExpirado(String token) {
-		Date dataExpiracao = this.getExpirationDateFromToken(token);
-		if (dataExpiracao == null) {
+		Date dataExpiration = this.getExpirationDateFromToken(token);
+		if (dataExpiration == null) {
 			return false;
 		}
-		return dataExpiracao.before(new Date());
+		return dataExpiration.before(new Date(expiration));
 	}
 
 	private Date gerarDataExpiracao() {
